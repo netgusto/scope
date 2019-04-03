@@ -2,7 +2,7 @@
 
 ## Demo
 
-```js
+```bash
 $ npm install
 $ npm run demo
 # open http://localhost:9000
@@ -10,7 +10,7 @@ $ npm run demo
 
 ## Build lib
 
-```js
+```bash
 $ npm run build
 # Lib is built in ./lib/scope.js
 ```
