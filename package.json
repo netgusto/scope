@@ -1,0 +1,17 @@
+{
+  "name": "nescillator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "1.16.4",
+    "typescript": "^3.3.3"
+  },
+  "scripts": {
+    "build": "parcel build src/scope.ts --out-dir ./lib --no-content-hash --no-minify --global Scope && cp src/{index.html,square.mp3} ./lib",
+    "demo": "npm run build && echo \"Demo on http://127.0.0.1:9000\" && http-server ./lib -p 9000 -o -s",
+    "prettier": "prettier src/**/*.{ts,tsx} --write"
+  }
+}
